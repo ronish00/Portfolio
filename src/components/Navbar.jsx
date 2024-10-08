@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from '../assets/logo.svg'
 import menu from '../assets/icons/menu.svg'
 import close from '../assets/icons/close.svg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -18,8 +18,9 @@ const Navbar = () => {
         <Link to='/'><img src={Logo} alt="logo" /></Link>
 
         <ul className='md:flex list-none gap-10 items-center hidden'>
-            <li className='text-[#777777]'><Link to='/work'>Work</Link></li>
-            <li className='text-[#777777]'><Link>Contact</Link></li>
+            <li><NavLink to='/' className={({isActive}) => isActive ? 'text-[#4831D4]' : 'text-[#777777]'}>Home</NavLink></li>
+            <li><NavLink to='/project' className={({isActive}) => isActive ? 'text-[#4831D4]' : 'text-[#777777]'}>Project</NavLink></li>
+            <li><NavLink to="/contact" className={({isActive}) => isActive ? 'text-[#4831D4]' : 'text-[#777777]'}>Contact</NavLink></li>
         </ul>
 
         <div className='w-6 h-6 cursor-pointer md:hidden' onClick={handleClick}><img src={menu} alt="menu" /></div>
