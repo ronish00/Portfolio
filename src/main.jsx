@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx';
 import Project from './pages/Project.jsx';
 import Contact from './pages/Contact.jsx';
 import ProjectDetails from './pages/ProjectDetails.jsx';
+import App from './App.jsx';
 
 // const router = createBrowserRouter([
 //   {
@@ -29,20 +30,23 @@ import ProjectDetails from './pages/ProjectDetails.jsx';
 //   }
 // ])
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Layout />} >
-      <Route path="" element={<Home />} />
-      <Route path="project" element={<Project />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="project/:projectName" element={<ProjectDetails />} />
-      <Route path='*' element={<div>No page found</div>} />
-    </Route>
-  )
-)
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route path="/" element={<Layout />} >
+//       <Route path="" element={<Home />} />
+
+//       <Route path="project" element={<Project />} />
+//       <Route path="project/:projectName" element={<ProjectDetails />} />
+
+//       <Route path="contact" element={<Contact />} />
+      
+//       <Route path='*' element={<div>No page found</div>} />
+//     </Route>
+//   )
+// )
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} ></RouterProvider>
+    <App />
   </StrictMode>,
 )

@@ -16,12 +16,12 @@ const Hero = () => {
               <p className="text-white text-sm">Hi, it's me</p>
               <div className="absolute rotate-180 right-3 bottom-[-10px] w-0 h-0 border-l-[14px] border-r-[14px] border-b-[17px] border-x-transparent border-b-[#4831D4] "></div>
             </div>
-            <h1 className="text-[#333] sm:text-7xl leading-tight font-bold mt-2 text-5xl">
+            <h1 className="text-[#333] dark:text-white sm:text-7xl leading-tight font-bold mt-2 text-5xl">
               Ronish <br />
               <span className="sm:pl-[100px] pl-[50px]">Katuwal</span>
             </h1>
           </div>
-          <p className="text-[#333] md:text-lg mt-7 text-lg max-w-[500px]">
+          <p className="text-[#333] dark:text-[#777] md:text-lg mt-7 text-lg max-w-[500px]">
             I specialize in building web applications, ensuring a
             seamless user experience.
           </p>
