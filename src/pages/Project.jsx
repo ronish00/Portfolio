@@ -1,42 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ProjectCard from '../components/ProjectCard'
-import dazzchat from '../assets/dazzchat.png'
-import corrtex from '../assets/corrtex.jpg'
+import { projects } from '../constants.js'
 
 
 const Project = () => {
-
-  const projects = [
-    {
-      'id': 1,
-      'name': 'Dazzchat UI Design',
-      'category': 'UI Design',
-      'image': dazzchat,
-      'link': 'dazzchat'
-    },
-    {
-      'id': 2,
-      'name': "Corrtex",
-      'category': 'UI Design',
-      'image': corrtex,
-      'link': 'corrtex'
-    },
-    {
-      'id': 3,
-      'name': 'Calulator Web App',
-      'category': 'Front End',
-      'image': dazzchat,
-      'link': 'calculator'
-    },
-    {
-      'id': 4,
-      'name': 'Word Counter App',
-      'category': 'Front End',
-      'image': dazzchat,
-      'link': 'word-counter'
-    },
-  ]
 
   return (
     <>

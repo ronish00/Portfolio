@@ -4,9 +4,18 @@ import gitlab from "../assets/icons/gitlab.svg";
 import instagram from "../assets/icons/instagram.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import dribbble from "../assets/icons/dribbble.svg";
+import whitegithub from "../assets/icons/whitegithub.svg";
+import whitegitlab from "../assets/icons/whitegitlab.svg";
+import whiteinstagram from "../assets/icons/whiteinstagram.svg";
+import whitelinkedin from "../assets/icons/whitelinkedin.svg";
+import whitedribbble from "../assets/icons/whitedribbble.svg";
 import heroImg from "../assets/heroImg.svg";
+import useTheme from "../context/Theme";
 
 const Hero = () => {
+
+  const {thememode} = useTheme();
+
   return (
     <div className="relative 2xl:px-72 2xl:justify-center xl:px-56 px-4 sm:px-16 flex items-center h-custom mt-24">
       <div className="flex md:flex-row md:justify-between md:items-center flex-col gap-[70px]">
@@ -26,11 +35,25 @@ const Hero = () => {
             seamless user experience.
           </p>
           <div className="flex gap-5 mt-[70px]">
-            <img src={github} alt="github" />
-            <img src={gitlab} alt="gitlab" />
-            <img src={instagram} alt="instagram" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={dribbble} alt="dribbble" />
+            {
+              thememode === 'light' ? (
+                <>
+                  <img src={github} alt="github" />
+                  <img src={gitlab} alt="gitlab" />
+                  <img src={instagram} alt="instagram" />
+                  <img src={linkedin} alt="linkedin" />
+                  <img src={dribbble} alt="dribbble" />
+                </>
+              ) : (
+                <>
+                  <img src={whitegithub} alt="whitegithub" />
+                  <img src={whitegitlab} alt="whitegitlab" />
+                  <img src={whiteinstagram} alt="whiteinstagram" />
+                  <img src={whitelinkedin} alt="whitelinkedin" />
+                  <img src={whitedribbble} alt="whitedribbble" />
+                </>
+              )
+            }
           </div>
         </div>
         <div className="hidden lg:block">
