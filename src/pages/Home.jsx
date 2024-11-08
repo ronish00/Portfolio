@@ -13,7 +13,7 @@ import heroImg from "../assets/heroImg.svg";
 import useTheme from "../context/Theme";
 import { Link } from "react-router-dom";
 
-const Hero = () => {
+const Home = () => {
 
   const {thememode} = useTheme();
 
@@ -65,4 +65,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
