@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import ProjectCard from '../components/ProjectCard'
 import { projects } from '../constants.js'
 
@@ -16,7 +15,7 @@ const Project = () => {
 
         <div className="my-[70px] grid grid-cols-1 lg:grid-cols-2 lg:gap-[80px] gap-[60px] 2xl:gap-x-8 mx-auto">
           {
-            projects.map( item => <ProjectCard key={item.id} name={item.name} category={item.category} image={item.image} link={item.link} />)
+            projects.map( item => <ProjectCard key={item.slug} name={item.name} category={item.category} image={item.image} slug={item.slug} />)
           }
         </div>
       </div>

@@ -11,6 +11,7 @@ import whitelinkedin from "../assets/icons/whitelinkedin.svg";
 import whitedribbble from "../assets/icons/whitedribbble.svg";
 import heroImg from "../assets/heroImg.svg";
 import useTheme from "../context/Theme";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -38,19 +39,19 @@ const Hero = () => {
             {
               thememode === 'light' ? (
                 <>
-                  <img src={github} alt="github" />
-                  <img src={gitlab} alt="gitlab" />
-                  <img src={instagram} alt="instagram" />
-                  <img src={linkedin} alt="linkedin" />
-                  <img src={dribbble} alt="dribbble" />
+                  <Link to="https://github.com/ronish00" target="_blank"><img src={github} alt="github" /></Link>
+                  <Link to="https://www.linkedin.com/in/ronish-katuwal-0a02b7233/"><img src={linkedin} alt="github" target="_blank" /></Link>
+                  <Link to="https://dribbble.com/ronishkatuwal"><img src={dribbble} alt="github" target="_blank" /></Link>
+                  <Link to="https://www.instagram.com/dnesh_katwal/"><img src={instagram} alt="github" target="_blank" /></Link>
+                  <Link to="https://gitlab.com/ronishkatuwal00" target="_blank"><img src={gitlab} alt="github" /></Link>
                 </>
               ) : (
                 <>
-                  <img src={whitegithub} alt="whitegithub" />
-                  <img src={whitegitlab} alt="whitegitlab" />
-                  <img src={whiteinstagram} alt="whiteinstagram" />
-                  <img src={whitelinkedin} alt="whitelinkedin" />
-                  <img src={whitedribbble} alt="whitedribbble" />
+                  <Link to="https://github.com/ronish00" target="_blank"><img src={whitegithub} alt="github" /></Link>
+                  <Link to="https://www.linkedin.com/in/ronish-katuwal-0a02b7233/"><img src={whitelinkedin} alt="github" target="_blank" /></Link>
+                  <Link to="https://dribbble.com/ronishkatuwal"><img src={whitedribbble} alt="github" target="_blank" /></Link>
+                  <Link to="https://www.instagram.com/dnesh_katwal/"><img src={whiteinstagram} alt="github" target="_blank" /></Link>
+                  <Link to="https://gitlab.com/ronishkatuwal00" target="_blank"><img src={whitegitlab} alt="github" /></Link>
                 </>
               )
             }

@@ -5,8 +5,7 @@ import { projectInfo } from '../constants.js';
 const ProjectDetails = () => {
     const {projectName} = useParams();
 
-    const project = projectInfo.find(project => project.link === projectName)
-    console.log(project)
+    const project = projectInfo.find(project => project.slug === projectName)
 
   return (
     <div className='xl:px-56 2xl:px-72 px-4 sm:px-16 mx-auto mt-10'>
