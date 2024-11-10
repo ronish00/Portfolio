@@ -11,7 +11,7 @@ import whitelinkedin from "../assets/icons/whitelinkedin.svg";
 import whitedribbble from "../assets/icons/whitedribbble.svg";
 import heroImg from "../assets/heroImg.svg";
 import smallArrow from "../assets/smallArrow.svg";
-import whiteSmallArrow from "../assets/WhiteSmallArrow.svg";
+import whiteSmallArrow from "../assets/whiteSmallArrow.svg";
 import useTheme from "../context/Theme";
 import { Link } from "react-router-dom";
 
