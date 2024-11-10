@@ -53,17 +53,17 @@ const Home = () => {
               thememode === 'light' ? (
                 <>
                   <Link to="https://github.com/ronish00" target="_blank"><img src={github} alt="github" /></Link>
-                  <Link to="https://www.linkedin.com/in/ronish-katuwal-0a02b7233/"><img src={linkedin} alt="github" target="_blank" /></Link>
-                  <Link to="https://dribbble.com/ronishkatuwal"><img src={dribbble} alt="github" target="_blank" /></Link>
-                  <Link to="https://www.instagram.com/dnesh_katwal/"><img src={instagram} alt="github" target="_blank" /></Link>
+                  <Link to="https://www.linkedin.com/in/ronish-katuwal-0a02b7233/" target="_blank"><img src={linkedin} alt="github" /></Link>
+                  <Link to="https://dribbble.com/ronishkatuwal" target="_blank"><img src={dribbble} alt="github" /></Link>
+                  <Link to="https://www.instagram.com/dnesh_katwal/" target="_blank"><img src={instagram} alt="github" /></Link>
                   <Link to="https://gitlab.com/ronishkatuwal00" target="_blank"><img src={gitlab} alt="github" /></Link>
                 </>
               ) : (
                 <>
                   <Link to="https://github.com/ronish00" target="_blank"><img src={whitegithub} alt="github" /></Link>
-                  <Link to="https://www.linkedin.com/in/ronish-katuwal-0a02b7233/"><img src={whitelinkedin} alt="github" target="_blank" /></Link>
-                  <Link to="https://dribbble.com/ronishkatuwal"><img src={whitedribbble} alt="github" target="_blank" /></Link>
-                  <Link to="https://www.instagram.com/dnesh_katwal/"><img src={whiteinstagram} alt="github" target="_blank" /></Link>
+                  <Link to="https://www.linkedin.com/in/ronish-katuwal-0a02b7233/" target="_blank"><img src={whitelinkedin} alt="github" /></Link>
+                  <Link to="https://dribbble.com/ronishkatuwal" target="_blank"><img src={whitedribbble} alt="github" /></Link>
+                  <Link to="https://www.instagram.com/dnesh_katwal/" target="_blank"><img src={whiteinstagram} alt="github" /></Link>
                   <Link to="https://gitlab.com/ronishkatuwal00" target="_blank"><img src={whitegitlab} alt="github" /></Link>
                 </>
               )
