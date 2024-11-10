@@ -20,7 +20,7 @@ const Home = () => {
   const {thememode} = useTheme();
 
   return (
-    <div className="relative 2xl:px-72 2xl:justify-center xl:px-56 px-4 sm:px-16 flex items-center h-custom mt-24">
+    <div className="relative 2xl:px-72 2xl:justify-center xl:px-56 px-4 sm:px-16 flex items-center mt-24">
       <div className="flex md:flex-row md:justify-between md:items-center flex-col gap-[70px]">
         <div className="xl:w-[500px]">
           <div>
