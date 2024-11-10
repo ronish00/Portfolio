@@ -10,6 +10,8 @@ import whiteinstagram from "../assets/icons/whiteinstagram.svg";
 import whitelinkedin from "../assets/icons/whitelinkedin.svg";
 import whitedribbble from "../assets/icons/whitedribbble.svg";
 import heroImg from "../assets/heroImg.svg";
+import smallArrow from "../assets/smallArrow.svg";
+import whiteSmallArrow from "../assets/WhiteSmallArrow.svg";
 import useTheme from "../context/Theme";
 import { Link } from "react-router-dom";
 
@@ -31,10 +33,21 @@ const Home = () => {
               <span className="sm:pl-[100px] pl-[50px]">Katuwal</span>
             </h1>
           </div>
-          <p className="text-[#333] dark:text-[#777] md:text-lg mt-7 text-lg max-w-[500px]">
+          <p className="text-[#333] dark:text-[#777] md:text-lg mt-7 mb-10 text-lg max-w-[500px]">
             I specialize in building web applications, ensuring a
             seamless user experience.
           </p>
+          <Link to="/project" className="flex items-center gap-3 text-lg text-[#333] dark:text-[#777]">
+            See All Projects
+            {
+              thememode === 'light' ? (
+                  <img src={smallArrow} alt="smallArrow" srcSet="" />
+              ) : (
+                  <img src={whiteSmallArrow} alt="smallArrow" srcSet="" />
+              )
+            }
+          </Link>
+
           <div className="flex gap-5 mt-[70px]">
             {
               thememode === 'light' ? (
