@@ -103,9 +103,6 @@ const Navbar = () => {
           </div>
           <ul className="mt-[90px] flex flex-col items-center gap-10">
             <li className="text-[#777777]">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="text-[#777777]">
               <Link to="/project">Project</Link>
             </li>
             <li className="text-[#777777]">
