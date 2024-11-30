@@ -109,6 +109,9 @@ const Navbar = () => {
               <Link to="/project">Project</Link>
             </li>
             <li className="text-[#777777]">
+              <Link to="/resume">Resume</Link>
+            </li>
+            <li className="text-[#777777]">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
