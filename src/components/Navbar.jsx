@@ -41,18 +41,6 @@ const Navbar = () => {
         <ul className="md:flex list-none gap-10 items-center hidden">
           <li>
             <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#4831D4] dark:text-[#7f6cff]"
-                  : "text-[#777777]"
-              }
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/project"
               className={({ isActive }) =>
                 isActive
@@ -61,6 +49,18 @@ const Navbar = () => {
               }
             >
               Project
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/resume"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#4831D4] dark:text-[#7f6cff]"
+                  : "text-[#777777]"
+              }
+            >
+              Resume
             </NavLink>
           </li>
           <li>

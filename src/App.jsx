@@ -8,6 +8,7 @@ import Project from './pages/Project.jsx';
 import Contact from './pages/Contact.jsx';
 import ProjectDetails from './pages/ProjectDetails.jsx';
 import Error from './pages/Error.jsx';
+import Resume from './pages/Resume.jsx';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -17,6 +18,8 @@ const router = createBrowserRouter(
         <Route path="project" element={<Project />} />
         <Route path="project/:projectName" element={<ProjectDetails />} />
   
+        <Route path="resume" element={<Resume />} />
+
         <Route path="contact" element={<Contact />} />
         
         <Route path='*' element={<Error />} />

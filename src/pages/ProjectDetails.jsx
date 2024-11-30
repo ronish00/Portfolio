@@ -10,7 +10,7 @@ const ProjectDetails = () => {
   return (
     <div className='xl:px-56 2xl:px-72 px-4 sm:px-16 mx-auto mt-10'>
         <div className='mb-16'>
-            <h1 className='text-5xl font-bold text-[#333] dark:text-white'>{project.name}<span className='text-[#4831D4] 939395'>.</span></h1>
+            <h1 className='text-5xl font-bold text-[#333] dark:text-white'>{project.name}<span className='text-[#4831D4] dark:text-[#7f6cff] 939395'>.</span></h1>
             <p className='text-[#777] mt-4'>{project?.subDesc}</p>
         </div>
         <img src={project.image} className='rounded-2xl' alt="" />
